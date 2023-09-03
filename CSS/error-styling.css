@@ -1,5 +1,49 @@
 @import "index.css";
 
 .error-text{
-    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-family: "Bell MT", sans-serif;
+    flex: 1 0 100%;
+    text-align: center;
+    max-width: 200px;
+    top: 50px;
+    background-color: rgba(255,255,255,10%);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@keyframes fadePop {
+    from{
+        opacity: 75%;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutSlide {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+}
+
+@keyframes glowingRage {
+    0%{
+        border: 2px solid rgb(197, 22, 5, 20%);
+    }
+    40%{
+        border: 2px solid rgb(197, 22, 5, 80%);
+    }
+    80%{
+        border: 2px solid rgb(197, 22, 5, 25%);
+    }
+    100%{
+        border: none;
+    }
 }
