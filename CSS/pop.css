@@ -1,0 +1,40 @@
+@import "dyslexia.css";
+
+.pop-container{
+    display: inline-flex;
+    position: fixed;
+    width: 250px;
+    height: 50px;
+    left: calc(50% - 8vw);
+    background-color: #EEE0C9;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px 2px rgba(0,0,0, 25%);
+}
+
+.pop-message{
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: center;
+    font: 16px "Poppins", sans-serif;
+    margin-top: 10px;
+}
+
+@keyframes slideTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
